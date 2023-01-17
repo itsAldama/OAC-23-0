@@ -24,7 +24,7 @@ section .bss
     op1 resb 5
     op2 resb 5
     op resb 5
-    resultado resb 5
+    resultado resb 1
 
 section .text
     global _start
@@ -120,7 +120,7 @@ show_result:
     mov rax, 1
     mov rdi, 1
     mov rsi, resultado
-    mov rdx, 5
+    mov rdx, 1
     syscall
     
     ret
