@@ -17,7 +17,7 @@ _count_loop:
     ; Siguiente dirección del mensaje
     inc rax
     ; Incrementamos el contador de letras
-    inc byte [rbx]
+    inc qword [rbx]
     mov cl, [rax]
     cmp cl, 0
     jne _count_loop
@@ -36,7 +36,7 @@ _reverse:
     ; Agregamos el cambio del línea al final
     mov [r9], byte 10
     ; Para que salga el salto de línea
-    inc byte [rbx] 
+    inc qword [rbx] 
     
     mov rax, 1
     mov rdi, 1

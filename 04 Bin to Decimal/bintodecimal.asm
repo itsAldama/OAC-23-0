@@ -2,7 +2,7 @@
 
 section .data
     binstr db "10101010"; Número a evaluar
-    result db 0
+    result db 0 
 
 section .text
     global _start
@@ -21,13 +21,14 @@ mul_bucle:
     ; Guardamos los 8 bits en AL
     mov al, [r15]
     ; Restamos los valores ASCII
-    sub al, '0'
+    sub al, 48
     ; RAX = RAX*R14
     mul r14
     ; Acumulamos en r12
     add r12, rax
+
 sig_pa:
-    ; Limpiamos RDX
+    ; Para dividir siempre tenemos que limpiar el registro que vamos a utilizar, Limpiamos RDX
     xor rdx, rdx
     ; Guardamos en RAX para dividir
     mov rax, r14
@@ -43,6 +44,13 @@ sig_pa:
 
 fin:
     mov [result], r12b
+
+    mov rax, 1
+    mov rdi, 1
+    mov rsi, result
+    mov rdx, byte 8
+    syscall
+
     mov rax, 60
     mov rdi, 0
     syscall
