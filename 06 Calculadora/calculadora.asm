@@ -190,3 +190,30 @@ fin:
     mov rax, 60
     mov rdi, 0
     syscall
+
+; todo lo de abajo es verificación de la correcta lectura de números
+    mov rax, 1
+    mov rdi, 1
+    mov rsi, num1
+    mov rdx, 1
+    syscall
+
+    mov rax, 1
+    mov rdi, 1
+    mov rsi, num2
+    mov rdx, 1
+    syscall
+
+    mov rax, 1
+    mov rdi, 1
+    mov rsi, num3
+    mov rdx, 1
+    syscall
+
+; de ascci a num
+mov r8, [num1]
+    sub r8, '0'
+    mov r9, [num2]
+    sub r9, '0'
+    mov r10, [num3]
+    sub r10, '0'

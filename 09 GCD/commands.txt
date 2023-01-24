@@ -1,0 +1,62 @@
++break _start
+Breakpoint 1 at 0x401000
++run
+Starting program: /mnt/c/Users/Danie/Desktop/PUCP/6to Ciclo/02 OAC/08 Practicando/09 GCD/gcd 
+
+Breakpoint 1, 0x0000000000401000 in _start ()
++set disassembly-flavor inte
++set disassembly-flavor intel
++disass
+Dump of assembler code for function _start:
+=> 0x0000000000401000 <+0>:	mov    rax,QWORD PTR ds:0x402000
+   0x0000000000401008 <+8>:	mov    rbx,QWORD PTR ds:0x402008
+End of assembler dump.
++i r rax
+rax            0x0                 0
++ni
+0x0000000000401008 in _start ()
++i r rax
+rax            0xc                 12
++ni
+0x0000000000401010 in calculate ()
++ni
+0x0000000000401013 in calculate ()
++ni
+0x0000000000401015 in calculate ()
++ni
+0x0000000000401018 in calculate ()
++ni
+0x0000000000401010 in calculate ()
++ni
+0x0000000000401013 in calculate ()
++ni
+0x000000000040101a in swap ()
++ni
+0x000000000040101c in swap ()
++ni
+0x000000000040101f in swap ()
++ni
+0x0000000000401010 in calculate ()
++ni
+0x0000000000401013 in calculate ()
++i r rax
+rax            0xfffffffffffffffa  -6
++ni
+0x0000000000401015 in calculate ()
++ni
+0x0000000000401018 in calculate ()
++ni
+0x0000000000401010 in calculate ()
++ni
+0x0000000000401013 in calculate ()
++ni
+0x0000000000401015 in calculate ()
++ni
+0x0000000000401018 in calculate ()
++ni
+0x0000000000401010 in calculate ()
++ni
+0x0000000000401013 in calculate ()
++i r rax
+rax            0xfffffffffffffffa  -6
++q
