@@ -7,8 +7,6 @@ if __name__ == '__main__':
     # gcc -shared promedio_asm.o lib_promedio_c.c -o lib_promedio.so
     # python3 promedio_py.py
     
-    # ah
-
     size = 10
     x = np.random.randint(2,100,size,dtype = np.int32)
 
