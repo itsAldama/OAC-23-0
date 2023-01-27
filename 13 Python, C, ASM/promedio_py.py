@@ -6,6 +6,8 @@ if __name__ == '__main__':
     # nasm -f elf64 promedio_asm.asm -o promedio_asm.o
     # gcc -shared promedio_asm.o lib_promedio_c.c -o lib_promedio.so
     # python3 promedio_py.py
+
+    # s2
     
     size = 10
     x = np.random.randint(2,100,size,dtype = np.int32)
