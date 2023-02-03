@@ -5,7 +5,7 @@ import statistics
 import matplotlib.pyplot as plt
 
 if __name__ == '__main__':
-    
+
     lib = ctypes.CDLL('./lib.so')
     lib.mat_vec.argtypes = [np.ctypeslib.ndpointer(dtype=np.int32),
                             np.ctypeslib.ndpointer(dtype=np.int32),
@@ -84,3 +84,9 @@ if __name__ == '__main__':
         t1_total.clear()
         t2_total.clear()
         t3_total.clear()
+
+    # A partir de qué valor de N hay una mejora?
+    #   A partir de N = 100 aproximadamente, se observa una mejora en el tiempo de ejecución de las funciones.
+    
+    # Todos los tamaños del bloque representn una mejora?
+    #   Si, todos los tamaños de bloque representan una mejora en el tiempo de ejecución de las funciones.

@@ -86,3 +86,9 @@ if __name__ == '__main__':
         t1_total.clear()
         t2_total.clear()
         t3_total.clear()
+    
+    # A partir de qué valor de N hay una mejora?
+    #   A partir de N = 1250 aproximadamente, se observa una mejora en el tiempo de ejecución de las funciones
+    
+    # Todos los tamaños de bloque representan una mejora?
+    #   No, a partir del tamaño de bloque 32, no se observa una mejora significativa en el tiempo de ejecución
