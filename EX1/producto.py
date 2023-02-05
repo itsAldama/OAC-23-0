@@ -26,7 +26,7 @@ if __name__ == "__main__":
     lib_producto.calcular_producto_cantidad_mayores_menores_05_C.restype = ctypes.c_int
 
     lib_producto.calcular_producto_cantidad_mayores_menores_05_ASM.argtypes = [np.ctypeslib.ndpointer(dtype = np.float64), ctypes.c_int, ctypes.c_double]
-    lib_producto.calcular_producto_cantidad_mayores_menores_05_ASM.restype = ctypes.c_int32
+    lib_producto.calcular_producto_cantidad_mayores_menores_05_ASM.restype = ctypes.c_int
 
     lista_mediana_tiempo_PY = []
     lista_mediana_tiempo_C = []

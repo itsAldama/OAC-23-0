@@ -1,4 +1,4 @@
-; nasm -f elf64 calcular_producto_cantidad_mayores_menores_05_ASM.asm -o calcular_producto_cantidad_mayores_menores_05_ASM.o    
+; nasm -f elf64 producto_ASM.asm -o producto_ASM.o    
 
     global calcular_producto_cantidad_mayores_menores_05_ASM
     section .text
@@ -16,7 +16,7 @@ calcular_producto_cantidad_mayores_menores_05_ASM:
     loop:
         movsd xmm1, [rdi]
         ucomisd xmm1, xmm0
-        jg mayor_a_05
+        ja mayor_a_05
 
         ; si es menor a 0.5
         inc r9
