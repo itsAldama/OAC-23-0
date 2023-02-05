@@ -27,6 +27,7 @@ calcular_producto_cantidad_mayores_menores_05_ASM:
             jnz loop
 
     fin:
+        xor rax, rax
         mov rax, r8
         ; rdx : rax <- rax*r9
         mul r9
