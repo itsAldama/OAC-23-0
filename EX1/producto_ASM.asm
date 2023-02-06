@@ -1,9 +1,9 @@
 ; nasm -f elf64 producto_ASM.asm -o producto_ASM.o    
 
-    global calcular_producto_cantidad_mayores_menores_05_ASM
+    global calcular_producto_ASM
     section .text
 
-calcular_producto_cantidad_mayores_menores_05_ASM:
+calcular_producto_ASM:
     ; rdi <- arreglo numeros
     ; rsi <- cantidad de numeros
     ; xmm0 <- constante 0.5
@@ -17,6 +17,7 @@ calcular_producto_cantidad_mayores_menores_05_ASM:
         movsd xmm1, [rdi]
         ucomisd xmm1, xmm0
         ja mayor_a_05
+        je siguiente ; si es igual a 0.5
 
         ; si es menor a 0.5
         inc r9
