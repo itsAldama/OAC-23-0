@@ -1,4 +1,4 @@
-// gcc --shared producto_ASM.o lib_producto.c -o lib_producto.so 
+// gcc -shared producto_ASM.o lib_producto.c -o lib_producto.so 
 
 extern int calcular_producto_cantidad_mayores_menores_05_ASM(double *numeros, int n, double comparador);
 
