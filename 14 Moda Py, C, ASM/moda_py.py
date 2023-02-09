@@ -20,6 +20,7 @@ def moda_py (vector,T):
 			cont_max=cont
 			valor_max=vector[n]
 	return valor_max
+    
 if __name__ == '__main__':
     # arreglo_prueba_list = [1.5,1.5,1.5,1.5,1.5,1.5,34,5,5,5,3,3,3,2,2]
     # arreglo_prueba = np.array(arreglo_prueba_list, dtype = np.float32)
@@ -37,7 +38,7 @@ if __name__ == '__main__':
 
     for N in (L):
         arreglo_prueba = np.random.rand(N,1).astype(np.float32)
-
+        print(type(arreglo_prueba))
         list_py = []
         list_c = []
         list_asm =[]
