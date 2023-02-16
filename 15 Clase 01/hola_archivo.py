@@ -9,3 +9,5 @@ if __name__ == '__main__':
     # Cuando la llamo como un archivo desde otro código, no se muestra
     print("Dentro")
     print(fun(1,2))
+else:
+    print('nada')
