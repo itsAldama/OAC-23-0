@@ -26,6 +26,9 @@ def verificar_es_primo_multi(numero):
     q = Queue()
 
     ultimo = floor(sqrt(numero)) + 1
+
+    p = Pool(processes=2)
+    
     p1 = Process(target=verificar_primo, args=(2, ultimo//2, numero, q, ))
     p2 = Process(target=verificar_primo, args=(ultimo//2, ultimo, numero, q, ))
     p1.start()
