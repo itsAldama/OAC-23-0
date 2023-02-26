@@ -56,7 +56,3 @@ if __name__ == "__main__":
     assert(es_primo_sin==es_primo_con)
     print("Prueba assert pasada correctamente los resultados son iguales", end="\n\n")
     print(f"Speed Up sin_multiprocess_time/con_multiprocess_time: {sin_multiprocess_time/con_multiprocess_time: 0.2f}", end="\n\n")
-
-
-    ultimo = floor(sqrt(n)) + 1
-    nums = [i for i in range]
