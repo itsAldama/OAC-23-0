@@ -1,0 +1,17 @@
+LISTA DE CLASIFICADOS A LA FASE DE ELIMINATORIAS
+------------------------------------------------
+SINCRONO
+['BOS', 'ATL', 'DAL', 'GSW', 'LAL', 'MIA', 'OKC', 'NOP', 'SEA', 'SAS', 'CLE', 'WAS', 'MIN', 'HOU', 'PHI', 'TOR']
+Tiempo de ejecucion sincrono: 7.215 segundos
+ASINCRONO
+['PHI', 'TOR', 'MIN', 'HOU', 'CLE', 'WAS', 'SEA', 'SAS', 'OKC', 'NOP', 'LAL', 'MIA', 'DAL', 'GSW', 'BOS', 'ATL']
+Tiempo de ejecucion asincrono: 0.167 segundos
+
+PODIO DE LA FASE DE ELIMINATORIAS
+--------------------------------
+SINCRONO
+['TOR', 'HOU', 'ATL']
+Tiempo de ejecucion sincrono: 2.256 segundos
+ASINCRONO
+['DAL', 'WAS', 'NOP']
+Tiempo de ejecucion asincrono: 0.619 segundos
