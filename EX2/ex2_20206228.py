@@ -31,7 +31,6 @@ def verificar_es_primo_multi(numero):
     p1.start()
     p2.start()
     p1.join()
-    
     p2.join()
     return q.get() and q.get()
 
