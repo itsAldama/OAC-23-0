@@ -34,7 +34,7 @@ def grafico_tiempo_vs_procesos():
     # c) Aumentar el número de procesos no hace que el tiempo disminuya necesariamente,
     #   solo hasta con 4 puede ser que disminuya, pero en el resto incrementa considerablemente
     #   esto se debe a la cantidad de cores que tiene nuestra pc, si le mandamos más procesos que la cantidad
-    #   core que tiene, un solo core estará ejecutando varios procesos que ocupan memoria y lo hará más lento.
+    #   cores que tiene, un solo core estará ejecutando varios procesos que ocupan memoria y lo hará más lento.
 
 def verificar_es_primo_sinc(numero):
 
