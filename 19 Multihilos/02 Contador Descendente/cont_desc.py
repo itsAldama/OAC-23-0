@@ -1,10 +1,11 @@
 from threading import Thread
 import time
 
-CUENTA = 50_000_000
+CUENTA = 100
 
 def cuenta(n):
     while n > 0:
+        print(n)
         n -= 1
 
 if __name__ == '__main__':
